@@ -6,7 +6,7 @@ import re
 def validarPassword(password):
 
     while True:   
-        if (len(password)<8 & len(password)>16): 
+        if (len(password)<8 or len(password)>16): 
           return("A sua password deve ter entre 8 e 16 elementos de cumprimentos")
 
         elif not re.search("[a-z]", password): 
